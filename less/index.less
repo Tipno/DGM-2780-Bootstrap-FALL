@@ -1,12 +1,19 @@
+@tablet: (max-width: 990px);
+
 .clear {
   clear: both; }
 
 nav {
+  width: 100%;
+  height: 80px;
   float: left;
-  color: #FF0000;
-  font-family: Helvetica, sans-serif; }
-  nav ul li ul.sub-nav {
-    display: none; }
+  font-family: Helvetica, sans-serif; 
+  justify-content: space-between !important;
+}
+
+nav ul li ul.sub-nav {
+  display: none; 
+}
 
 .box {
   width: 200px;
@@ -17,5 +24,62 @@ nav {
   width: 200px;
   height: 200px;
   background: gray; }
+
+.test {
+  width: 100px;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+.accordion {
+  width: 100%;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+#bottomSection {
+  #mobileBottom {
+    width: 100%;
+    display: none;
+  }
+  #desktopBottom {
+    width: 100%;
+    display: block;
+  }
+
+  @media @tablet {
+    #mobileBottom {
+      display: block;
+    }
+    #desktopBottom {
+      display: none;
+    }
+  }
+}
+
+.infoCard {
+  margin: 0 0 24px 0;
+}
+
+.blackBack {
+  color: white;
+  background-color: black;
+}
+
+#myJumbo {
+  color: white;
+  background-image: url("../images/banner1.png");
+}
+
+#productJumb {
+  // background-image: url("../images/banner3.jpg");
+  // background-size: cover;
+  background-color: #002738;
+  color: white;
+}
 
 /*# sourceMappingURL=main.css.map */
